@@ -6,8 +6,8 @@ function Register(){
     let [password,setPassword]=useState("");
     let navigate=useNavigate();
     async function HandleLogin(){
-        console.log("username",username);
-        console.log("password",password);
+        //console.log("username",username);
+        //console.log("password",password);
 
        //let res=
        await fetch("http://localhost:3000/api/user/register", {
