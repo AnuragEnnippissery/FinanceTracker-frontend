@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* also centers vertically */
+  padding: 10px 20px;
+}
+
+/* Remove default ul styling */
+.menu-btn {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex; /* ensures items align horizontally */
+  gap: 20px;
+}
+
+/* Remove default li spacing */
+.menu-btn li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: link styling */
+.menu-btn a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}

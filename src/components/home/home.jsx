@@ -1,8 +1,12 @@
+import "./Home.css"
 function Home(){
     return(
         <>
-        <h2>Welcome</h2>
-        <button>Get Started</button>
+        <div className="main-div">
+             <h2>Welcome</h2>
+             <button>Get Started</button>
+        </div>
+       
         </>
     )
 }

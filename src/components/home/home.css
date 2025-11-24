@@ -1,0 +1,7 @@
+/* Home.css */
+.main-div {
+  height: 100vh;
+  background-image: url("../../assets/bg-finance-tracker.png");
+  background-size: cover;
+  background-position: center;
+}
