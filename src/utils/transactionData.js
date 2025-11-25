@@ -21,3 +21,25 @@ export function useGetSummary(id) {
   return item;
 }
 
+export function useGetSubCategory(id,subCategory) {
+  const [item, setItem] = useState(null);
+
+  useEffect(() => {
+    async function fetchItem() {
+      try {
+        ///api/payment/:userId/:sub_category
+        const res = await fetch(`http://localhost:3000/api/payment/${id}/${subCategory}`);
+        const json = await res.json();
+        console.log("sub category data",json)
+        setItem(json);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    }
+
+    if (id,subCategory) fetchItem();
+  }, [id,subCategory]);
+
+  return item;
+}
+
