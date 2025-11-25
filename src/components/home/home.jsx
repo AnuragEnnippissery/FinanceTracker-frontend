@@ -3,7 +3,7 @@ function Home(){
     return(
         <>
         <div className="main-div">
-             <h2>Welcome</h2>
+             <h2>Welcome to Personal Finance</h2>
              <button>Get Started</button>
         </div>
        

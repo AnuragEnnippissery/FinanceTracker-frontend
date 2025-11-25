@@ -3,6 +3,14 @@
   justify-content: space-between;
   align-items: center; /* also centers vertically */
   padding: 10px 20px;
+  background-color: darkblue;
+}
+.container h2{
+  color: white;
+}
+.container h2:hover{
+  color: #ffdd8a; /* soft golden hover — matches your finance theme */
+  transition: 0.2s;
 }
 
 /* Remove default ul styling */
@@ -24,6 +32,11 @@
 /* Optional: link styling */
 .menu-btn a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 500;
 }
+.menu-btn a:hover {
+  color: #ffdd8a; /* soft golden hover — matches your finance theme */
+  transition: 0.2s;
+}
+
