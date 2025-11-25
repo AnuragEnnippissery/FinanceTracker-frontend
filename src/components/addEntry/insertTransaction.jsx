@@ -7,6 +7,8 @@ function InsertTransaction() {
   const [mode, setMode] = useState("");
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
+  const [date, setDate] = useState("");
+
 
   async function HandleClick(e) {
     e.preventDefault(); // Prevent page refresh
@@ -26,12 +28,13 @@ function InsertTransaction() {
           mode,
           description,
           amount: Number(amount),
+          ...(date && { date }) ,
         }),
       });
 
       const data = await res.json();
       console.log("Server Response:", data);
-      alert("Transaction added successfully!");
+      //alert("Transaction added successfully!");
 
     } catch (err) {
       console.error("Error adding transaction:", err);
@@ -94,6 +97,15 @@ function InsertTransaction() {
         />
 
         <br />
+
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          style={{ margin: "10px", padding: "8px" }}
+        />
+        <br />
+
 
         <button onClick={HandleClick} style={{ margin: "10px", padding: "8px" }}>
           Add Transaction
