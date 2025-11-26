@@ -11,6 +11,10 @@ import Vegetable from './components/credit/vegetable.jsx'
 import Grocery from './components/credit/grocery.jsx'
 import Login from './components/authentication/login.jsx'
 import Register from './components/authentication/register.jsx'
+import Medicine from './components/credit/medicine.jsx'
+import Shopping from './components/credit/shopping.jsx'
+import Bill from './components/credit/bill.jsx'
+import Dashboard from './components/home/dashboard.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -40,6 +44,18 @@ const appRouter = createBrowserRouter([
     },
     {
       path:'/credit/grocery',element:<Grocery/>
+    },
+    {
+      path:'/credit/medicine',element:<Medicine/>
+    },
+    {
+      path:'/credit/shopping',element:<Shopping/>
+    },
+    {
+      path:'/credit/bill',element:<Bill/>
+    },
+    {
+      path:'/dashboard',element:<Dashboard/>
     },
   ]
   }])
