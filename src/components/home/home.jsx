@@ -6,12 +6,8 @@ function Home(){
         <div className="main-div">
              <h2>Welcome to Personal Finance</h2>
              {/* <button>Get Started</button> */}
-             <div className="button">
-                <Link className="button" to="/dashboard">
-                    Get started
-                </Link>
+             <Link to="/dashboard" className="button">Get started</Link>
 
-             </div>
              
 
         </div>

@@ -1,0 +1,42 @@
+/* REMOVE LINK UNDERLINE */
+.selection a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Responsive Grid */
+.selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.title{
+    align-items: center;
+}
+/* Card Style */
+.card {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s ease-in-out;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Colors */
+.card-1 { background: #FF6B6B; }
+.card-2 { background: #4ECDC4; }
+.card-3 { background: #FFD93D; color: black; }
+.card-4 { background: #1A535C; color:white}
+.card-5 { background: #5C33F6; }
