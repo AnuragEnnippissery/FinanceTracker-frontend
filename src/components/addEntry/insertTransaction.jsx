@@ -1,4 +1,6 @@
 import { useState } from "react";
+//import { Toastify } from "toastify";
+import { toast } from "react-toastify";
 
 function InsertTransaction() {
   const [category, setCategory] = useState("");
@@ -12,6 +14,7 @@ function InsertTransaction() {
 
   async function HandleClick(e) {
     e.preventDefault(); // Prevent page refresh
+    //toast.configure()
 
     console.log("clicked");
 
@@ -35,9 +38,13 @@ function InsertTransaction() {
       const data = await res.json();
       console.log("Server Response:", data);
       //alert("Transaction added successfully!");
+      //toast("Transaction added successfully")
+      toast.success("transaction added")
 
     } catch (err) {
       console.error("Error adding transaction:", err);
+      //toast("error in adding ")
+      toast.error("transaction failed")
     }
   }
 

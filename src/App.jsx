@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/header/navbar.jsx'
+import { ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   
@@ -12,6 +14,7 @@ function App() {
     <>
     <Navbar/>
     <Outlet/>
+    <ToastContainer/>
     </>
   )
 }
