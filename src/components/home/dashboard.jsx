@@ -19,7 +19,7 @@ function Dashboard(){
                         <div className="card card-3">Email Reminder</div>
                     </Link>
 
-                    <Link to='/credit'>
+                    <Link to='/prediction'>
                         <div className="card card-4">Expense Predictor</div>
                     </Link>
 

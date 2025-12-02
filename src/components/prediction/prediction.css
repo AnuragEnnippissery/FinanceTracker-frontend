@@ -1,0 +1,60 @@
+/* Wrap EVERYTHING under .prediction-page */
+.prediction-page .prediction-container {
+  padding: 20px;
+  max-width: 950px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.prediction-page .page-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.prediction-page .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-page .card-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.prediction-page .prediction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prediction-page .prediction-table th,
+.prediction-page .prediction-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.prediction-page .prediction-table th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+}
+
+.prediction-page .capitalize {
+  text-transform: capitalize;
+}
+
+.prediction-page .chart-wrapper {
+  width: 100%;
+  height: 350px;
+}
+
+.prediction-page .loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}

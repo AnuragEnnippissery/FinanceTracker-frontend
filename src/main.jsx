@@ -15,6 +15,7 @@ import Medicine from './components/credit/medicine.jsx'
 import Shopping from './components/credit/shopping.jsx'
 import Bill from './components/credit/bill.jsx'
 import Dashboard from './components/home/dashboard.jsx'
+import GetPrediction from './components/prediction/prediction.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -56,6 +57,9 @@ const appRouter = createBrowserRouter([
     },
     {
       path:'/dashboard',element:<Dashboard/>
+    },
+    {
+      path:'/prediction',element:<GetPrediction/>
     },
   ]
   }])
