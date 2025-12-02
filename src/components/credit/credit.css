@@ -7,6 +7,11 @@
     justify-items: center;     /* centers items inside each column */
    
 }
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
 .dashboard a {
     display: flex;
