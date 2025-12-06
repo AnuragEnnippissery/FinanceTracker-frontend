@@ -17,6 +17,7 @@ const COLORS = ["#FF6B6B", "#4ECDC4", "#A29BFE", "#FDCB6E", "#00B894", "#E17055"
 function PredictionPage() {
   const [data, setData] = useState(null);
   const id = localStorage.getItem("id");
+  //const username =localStorage.getItem("username");
 
   useEffect(() => {
     async function fetchPrediction() {

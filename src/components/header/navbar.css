@@ -50,6 +50,24 @@
   color: white;
   cursor: pointer;
 }
+.username {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.logout-btn {
+  background: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #ff0000;
+}
+
 
 /* --- MOBILE RESPONSIVE --- */
 @media (max-width: 768px) {

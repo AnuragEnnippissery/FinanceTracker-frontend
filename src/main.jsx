@@ -16,6 +16,7 @@ import Shopping from './components/credit/shopping.jsx'
 import Bill from './components/credit/bill.jsx'
 import Dashboard from './components/home/dashboard.jsx'
 import GetPrediction from './components/prediction/prediction.jsx'
+import { AuthProvider } from './components/authentication/authcontext.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -66,6 +67,8 @@ const appRouter = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    
-    <RouterProvider router={appRouter}/>
+    <AuthProvider>                     {/* <-- wrap entire app */}
+      <RouterProvider router={appRouter} />
+    </AuthProvider>
   </StrictMode>,
 )

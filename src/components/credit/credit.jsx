@@ -17,7 +17,9 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 function Credit() {
     const id = localStorage.getItem("id");
+
     const summary = useGetSummary(id);
+    const username =localStorage.getItem("username");
 
     if (!summary) return <div>Loading...</div>;
 
@@ -38,6 +40,10 @@ function Credit() {
 
     // 1️⃣ Total spent
     const totalAmountSpent = summary.reduce((sum, item) => sum + item.totalAmount, 0);
+
+    //capitilize function
+    const capitalize = (str) =>
+        str ? str.charAt(0).toUpperCase() + str.slice(1) : "";
 
     // 2️⃣ Bar chart data (dynamic)
    const barData = {
@@ -76,7 +82,7 @@ function Credit() {
 
     return (
         <>
-            <h3 className="title">Welcome to your financial dashboard</h3>
+            <h3 className="title">Welcome to your financial dashboard  {capitalize(username)} !!</h3>
 
             {/* TOTAL AMOUNT */}
             <h4 className="title"> Total Amount Spent: ₹ {totalAmountSpent}</h4>
