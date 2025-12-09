@@ -40,6 +40,11 @@ function InsertTransaction() {
       //alert("Transaction added successfully!");
       //toast("Transaction added successfully")
       toast.success("transaction added")
+      setCategory("");
+      setSubCategory("");
+      setMode("");
+      setDescription("");
+      setAmount("");
 
     } catch (err) {
       console.error("Error adding transaction:", err);

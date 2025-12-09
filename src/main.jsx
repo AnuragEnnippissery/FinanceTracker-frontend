@@ -17,12 +17,14 @@ import Bill from './components/credit/bill.jsx'
 import Dashboard from './components/home/dashboard.jsx'
 import GetPrediction from './components/prediction/prediction.jsx'
 import { AuthProvider } from './components/authentication/authcontext.jsx'
+//import ErrorPage from './utils'
+import ErrorPage from './utils/error.jsx'
 
 const appRouter = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    //errorElement:<NotFound/>,
+    errorElement:<ErrorPage/>,
     children:[{
       path:'/',element: <Home/>
     },
