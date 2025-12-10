@@ -15,17 +15,17 @@ function Dashboard(){
                         <div className="card card-2">Credit</div>
                     </Link>
 
-                    <Link to='/credit'>
+                    {/* <Link to='/credit'>
                         <div className="card card-3">Email Reminder</div>
-                    </Link>
+                    </Link> */}
 
                     <Link to='/prediction'>
                         <div className="card card-4">Expense Predictor</div>
                     </Link>
 
-                    <Link to='/credit'>
+                    {/* <Link to='/credit'>
                         <div className="card card-5">Scan and Add</div>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
 
