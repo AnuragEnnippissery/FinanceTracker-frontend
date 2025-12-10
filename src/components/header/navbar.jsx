@@ -44,8 +44,9 @@ function Navbar() {
       <ul className={`menu-btn ${menuOpen ? "open" : ""}`}>
 
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+         <li><Link to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link></li>
         <li><Link to="/credit" onClick={() => setMenuOpen(false)}>Credit</Link></li>
-        <li><Link to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link></li>
+       
 
         {/* If user is logged in → show username + logout */}
         {user ? (
