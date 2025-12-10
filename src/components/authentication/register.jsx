@@ -11,7 +11,7 @@ function Register(){
         //console.log("password",password);
 
        //let res=
-       await fetch("http://localhost:3000/api/user/register", {
+       await fetch("https://financetracker-15bx.onrender.com/api/user/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

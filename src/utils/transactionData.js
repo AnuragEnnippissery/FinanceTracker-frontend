@@ -9,7 +9,7 @@ export function useGetSummary(id) {
         const token = localStorage.getItem("token");
 
         const res = await fetch(
-          `http://localhost:3000/api/payment/user/summary/${id}`,
+          `https://financetracker-15bx.onrender.com/api/payment/user/summary/${id}`,
           {
             method: "GET",
             headers: {
@@ -44,7 +44,7 @@ export function useGetSubCategory(id,subCategory) {
         ///api/payment/:userId/:sub_category
         //const res = await fetch(`http://localhost:3000/api/payment/${id}/${subCategory}`);
         const res = await fetch(
-          `http://localhost:3000/api/payment/${id}/${subCategory}`,
+          `https://financetracker-15bx.onrender.com/api/payment/${id}/${subCategory}`,
           {
             method: "GET",
             headers: {
